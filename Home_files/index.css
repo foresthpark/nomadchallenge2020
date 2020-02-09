@@ -1,0 +1,117 @@
+/*@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");*/
+/*@import "reset.css";*/
+
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #ecf0f1;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-family: "Cabin", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mainForm {
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 1px 2px 2px;
+    color: #000000;
+    border-radius: 40px;
+    background-color: #ffffffab;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.input-name {
+    width: 380px;
+    height: 42px;
+}
+
+.input-search {
+    width: 560px;
+    height: 50px;
+}
+
+.input-todo {
+    width: 300px;
+    height: 40px;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    font-size: x-large;
+    margin-right: 10px;
+    color: red;
+}
+
+.time {
+    font-size: 180px;
+    font-weight: 700;
+    /* text-shadow: 6px 5px 5px#000000; */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #81ecec, 0 0 0.2em white;
+}
+
+.font {
+    text-shadow: 1px 1px 2px black, 0 0 1em #81ecec, 0 0 0.2em white;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    color: #000000;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    animation: fadeIn 1.1s linear;
+}
